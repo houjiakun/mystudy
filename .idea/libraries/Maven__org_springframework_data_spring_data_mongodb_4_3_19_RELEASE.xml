@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.data:spring-data-mongodb:4.3.19.RELEASE">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-mongodb/4.3.19.RELEASE/spring-data-mongodb-4.3.19.RELEASE.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC>
       <root url="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-mongodb/4.3.19.RELEASE/spring-data-mongodb-4.3.19.RELEASE-javadoc.jar!/" />
     </JAVADOC>

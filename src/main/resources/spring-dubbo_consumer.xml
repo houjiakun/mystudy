@@ -16,6 +16,6 @@
 
 	<!--生成远程服务代理，可以像使用本地bean一样使用demoService -->
 	<dubbo:reference id="dubboService"
-					 interface="com.yida.dubbo.provider.dubboProviderService" />
+					 interface="com.study.dubbo.provider.DubboProviderService" cluster="failback" timeout="1" version="1.0.0"/>
 
 </beans>

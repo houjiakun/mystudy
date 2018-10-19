@@ -19,7 +19,7 @@
 
 	<!-- 声明需要暴露的服务接口-->
 	<dubbo:service interface="com.study.dubbo.provider.DubboProviderService"
-				   ref="dubboService" />
+				   ref="dubboService" protocol="dubbo" version="1.0.0"/>
 	<!--具体的实现bean -->
 	<bean id="dubboService" class="com.study.dubbo.provider.DubboProviderServiceImpl" />
 </beans>
