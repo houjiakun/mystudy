@@ -45,6 +45,7 @@
     <orderEntry type="library" name="Maven: log4j:log4j:1.2.16" level="project" />
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-mongodb:4.3.19.RELEASE" level="project" />
+    <orderEntry type="module" module-name="spijdbcDriver" />
+    <orderEntry type="module" module-name="spi" />
   </component>
 </module>

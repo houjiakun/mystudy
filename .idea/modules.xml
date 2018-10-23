@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mongodb.iml" filepath="$PROJECT_DIR$/mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spi/spi.iml" filepath="$PROJECT_DIR$/spi/spi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spijdbcDriver/spijdbcDriver.iml" filepath="$PROJECT_DIR$/spijdbcDriver/spijdbcDriver.iml" />
     </modules>
   </component>
 </project>
