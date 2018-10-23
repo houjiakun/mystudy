@@ -11,7 +11,7 @@ public class ConsumerTest {
                 new String[] { "spring-dubbo_consumer.xml" });
 
         DubboProviderService demoService = (DubboProviderService) context.getBean("dubboService");
-        String hello = demoService.sayHello("hejingyuan");
+        String hello = demoService.sayHello("zhangsan");
         System.out.println(hello);
 
         List list = demoService.getUsers();
