@@ -7,10 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DubboProviderServiceImpl implements DubboProviderService {
+    @Override
     public String sayHello(String name) {
         return "Hello " + name;
     }
 
+    @Override
     public List getUsers() {
         List list = new ArrayList();
         User u1 = new User();
