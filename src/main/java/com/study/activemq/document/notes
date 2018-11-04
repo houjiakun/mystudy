@@ -1,0 +1,7 @@
+一、同步 异步发送
+ 1.默认情况下，非持久化消息是异步发送的，持久化消息且非事务情况下是同步发送的
+ 2.开启事务情况下，消息都是异步发送。由于异步发送比同步发送效率高，所以发送持久化消息的时候，尽量开启事务操作。
+ 3.还可以使用以下方式实现同步、异步
+   ConnectionFactory factory =  new ActiveMQConnectionFactory("tcp://192.168.171.128:61616?jms.useAsyncSend=true");
+   ((ActiveMQConnectionFactory)factory).setUseAsyncSend(true);
+   ((ActiveMQConnection) connection).setUseAsyncSend(true);
