@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4204b726-911e-4294-9e87-7c253d652d03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/document/分布式消息通信ActiveMQ(一)-笔记.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/document/分布式消息通信ActiveMQ(三)-笔记.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/document/分布式消息通信ActiveMQ原理分析(二)-笔记.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/consumer/JMSPersistenedTopicConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/consumer/JMSQueueConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/consumer/JMSQueueListenerConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/consumer/JMSTopicConsumer1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/consumer/JMSTopicConsumer2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/document/notes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/producer/JMSQueueProducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/activemq/producer/JMSTopicProducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/observer/EventListenerDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/study/observer/MyPublisher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongodb.iml" afterPath="$PROJECT_DIR$/mongodb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/study/activemq/document/notes">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+              <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -250,58 +235,6 @@
             <path>
               <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="activemq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="activemq" type="462c0819:PsiDirectoryNode" />
-              <item name="document" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mystudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mystudy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -568,12 +501,20 @@
       <workItem from="1539930829916" duration="3765000" />
       <workItem from="1539954818463" duration="3168000" />
       <workItem from="1541225741104" duration="1734000" />
-      <workItem from="1541298710269" duration="9445000" />
+      <workItem from="1541298710269" duration="9577000" />
     </task>
+    <task id="LOCAL-00001" summary="activeMQ">
+      <created>1541327637111</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1541327637111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78513000" />
+    <option name="totallyTimeSpent" value="78645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,6 +599,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="activeMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="activeMQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,7 +1043,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/activemq/document/notes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding />
         </state>
       </provider>
