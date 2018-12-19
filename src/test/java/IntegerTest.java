@@ -12,8 +12,8 @@ public class IntegerTest {
         Field value = Integer.class.getDeclaredField("value");
         value.setAccessible(true);
         Integer tem = new Integer(a.intValue());
-        value.set(a, b.intValue());
-        value.set(b, tem.intValue());
+        value.setInt(a, b.intValue());
+        value.setInt(b, tem.intValue());
     }
 
 
