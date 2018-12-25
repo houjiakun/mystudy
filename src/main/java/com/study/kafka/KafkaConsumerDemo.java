@@ -15,15 +15,15 @@ public class KafkaConsumerDemo extends Thread{
     public KafkaConsumerDemo(String topic) {
         Properties properties=new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                "192.168.11.153:9092,192.168.11.154:9092,192.168.11.157:9092");
-        properties.put(ConsumerConfig.GROUP_ID_CONFIG,"KafkaConsumerDemo2");
+                "192.168.61.134:9092");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG,"KafkaConsumerDemo3");
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,"false");
         properties.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG,"1000");
         properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
                 "org.apache.kafka.common.serialization.IntegerDeserializer");
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
                 "org.apache.kafka.common.serialization.StringDeserializer");
-        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"earliest");
+        properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG,"none");
         kafkaConsumer=new KafkaConsumer(properties);
         kafkaConsumer.subscribe(Collections.singletonList(topic));
        /* TopicPartition topicPartition=new TopicPartition(topic,0);
@@ -42,6 +42,6 @@ public class KafkaConsumerDemo extends Thread{
     }
 
     public static void main(String[] args) {
-        new KafkaConsumerDemo("test").start();
+        new KafkaConsumerDemo("test1").start();
     }
 }

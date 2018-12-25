@@ -19,12 +19,14 @@ public class MyPartition implements Partitioner {
         List<PartitionInfo> partitionInfos=cluster.partitionsForTopic(topic);
         int partitionNum=0;
         if(key==null){
-            partitionNum=random.nextInt(partitionInfos.size()); //随机分区
+            //随机分区
+            partitionNum=random.nextInt(partitionInfos.size());
         }else{
             partitionNum=Math.abs((key.hashCode())%partitionInfos.size());
         }
         System.out.println("key ->"+key+"->value->"+value+"->"+partitionNum);
-        return partitionNum;  //指定发送的分区值
+        //指定发送的分区值
+        return partitionNum;
     }
 
     @Override
