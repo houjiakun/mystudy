@@ -1,4 +1,4 @@
-package com.study.thread;
+package com.study.concurrent;
 
 public class InterruptTest {
     public static void main(String[] args) throws InterruptedException {
