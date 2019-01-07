@@ -16,7 +16,7 @@ public class KafkaProducerDemo extends Thread{
     public KafkaProducerDemo(String topic,boolean isAysnc){
         Properties properties=new Properties();
         properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                "192.168.11.153:9092,192.168.11.154:9092,192.168.11.157:9092");
+                "192.168.61.134:9093,192.168.61.134:9092");
         properties.put(ProducerConfig.CLIENT_ID_CONFIG,"KafkaProducerDemo");
         properties.put(ProducerConfig.ACKS_CONFIG,"-1");
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
@@ -24,7 +24,7 @@ public class KafkaProducerDemo extends Thread{
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
                 "org.apache.kafka.common.serialization.StringSerializer");
         properties.put(ProducerConfig.PARTITIONER_CLASS_CONFIG,
-                "com.gupaoedu.kafka.MyPartition");
+                "com.study.kafka.MyPartition");
         producer=new KafkaProducer<Integer, String>(properties);
         
         this.topic=topic;
@@ -34,10 +34,11 @@ public class KafkaProducerDemo extends Thread{
     @Override
     public void run() {
         int num=0;
-        while(true){
+        while(num<100){
             String message="message_"+num;
             System.out.println("begin send message:"+message);
-            if(isAysnc){//异步发送
+            //异步发送
+            if(isAysnc){
                 producer.send(new ProducerRecord<Integer, String>(topic,message), new Callback() {
                     @Override
                     public void onCompletion(RecordMetadata recordMetadata, Exception e) {
@@ -47,7 +48,8 @@ public class KafkaProducerDemo extends Thread{
                         }
                     }
                 });
-            }else{//同步发送  future/callable
+                //同步发送  future/callable
+            }else{
                 try {
                     RecordMetadata recordMetadata=producer.
                             send(new ProducerRecord<Integer, String>(topic,message)).get();
@@ -70,6 +72,6 @@ public class KafkaProducerDemo extends Thread{
     }
 
     public static void main(String[] args) {
-        new KafkaProducerDemo("test",true).start();
+        new KafkaProducerDemo("test1",false).start();
     }
 }

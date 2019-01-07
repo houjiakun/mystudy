@@ -1,3 +1,4 @@
+import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -10,6 +11,13 @@ public class Test {
         map.put(3, "3");
         map.put(3, "2.5");
 
+
+    }
+
+    @org.junit.Test
+    public  void test() {
+        Map map = new HashMap(19);
+        map.put("1","1");
 
     }
 

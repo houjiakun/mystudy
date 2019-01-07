@@ -15,8 +15,8 @@ public class KafkaConsumerDemo3 extends Thread{
     public KafkaConsumerDemo3(String topic) {
         Properties properties=new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                "192.168.11.153:9092,192.168.11.154:9092,192.168.11.157:9092");
-        properties.put(ConsumerConfig.GROUP_ID_CONFIG,"KafkaConsumerDemo2");
+                "192.168.61.134:9092");
+        properties.put(ConsumerConfig.GROUP_ID_CONFIG,"KafkaConsumerDemo1");
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,"false");
         properties.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG,"1000");
         properties.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
@@ -42,7 +42,7 @@ public class KafkaConsumerDemo3 extends Thread{
     }
 
     public static void main(String[] args) {
-        new KafkaConsumerDemo3("test").start();
+        new KafkaConsumerDemo3("test1").start();
 
         //第一步，找到当前的consumer group的offset维护在哪个分区中
 //        System.out.println(("KafkaConsumerDemo2".hashCode())%50);

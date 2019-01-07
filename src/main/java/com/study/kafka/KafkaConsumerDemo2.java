@@ -16,7 +16,7 @@ public class KafkaConsumerDemo2 extends Thread{
     public KafkaConsumerDemo2(String topic) {
         Properties properties=new Properties();
         properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
-                "192.168.11.153:9092,192.168.11.154:9092,192.168.11.157:9092");
+                "192.168.61.134:9092");
         properties.put(ConsumerConfig.GROUP_ID_CONFIG,"KafkaConsumerDemo2");
         properties.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG,"false");
         properties.put(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG,"1000");
@@ -43,6 +43,6 @@ public class KafkaConsumerDemo2 extends Thread{
     }
 
     public static void main(String[] args) {
-        new KafkaConsumerDemo2("test").start();
+        new KafkaConsumerDemo2("test1").start();
     }
 }

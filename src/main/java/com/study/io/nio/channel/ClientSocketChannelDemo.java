@@ -142,9 +142,9 @@ public class ClientSocketChannelDemo {
         }
          
     }
-     
+
     public static void main(String[] args) throws InterruptedException{
-         
+
         InetSocketAddress remoteAddress = new InetSocketAddress("127.0.0.1", 8080);
          
         Thread ta = new Thread(new TCPEchoClient("thread a", remoteAddress));
