@@ -184,6 +184,21 @@
             <version>4.12</version>
         </dependency>
         <!-- TEST end -->
+
+        <!--rabbitmq-->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
+        <!--rabbitmq依赖 -->
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>1.3.5.RELEASE</version>
+        </dependency>
+        <!--rabbitmq-->
     </dependencies>
     <build>
         <plugins>
