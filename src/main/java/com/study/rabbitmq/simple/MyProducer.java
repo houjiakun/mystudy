@@ -32,7 +32,7 @@ public class MyProducer {
         String msg = "Hello world, Rabbit MQ";
 
         // String exchange, String routingKey, BasicProperties props, byte[] body
-        channel.basicPublish(EXCHANGE_NAME, "gupao.best", null, msg.getBytes());
+        channel.basicPublish(EXCHANGE_NAME, "best", null, msg.getBytes());
 
         channel.close();
         conn.close();

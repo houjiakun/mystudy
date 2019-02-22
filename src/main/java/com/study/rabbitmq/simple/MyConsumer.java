@@ -39,7 +39,7 @@ public class MyConsumer {
         System.out.println(" Waiting for message....");
 
         // 绑定队列和交换机
-        channel.queueBind(QUEUE_NAME,EXCHANGE_NAME,"gupao.best");
+        channel.queueBind(QUEUE_NAME,EXCHANGE_NAME,"best");
 
         // 创建消费者
         Consumer consumer = new DefaultConsumer(channel) {
