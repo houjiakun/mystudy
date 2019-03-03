@@ -1,4 +1,4 @@
-package com.study.redis.distributedLock;
+package com.study.redis;
 
 import redis.clients.jedis.Jedis;
 
@@ -12,12 +12,12 @@ public class RedisTool {
     private static final String SET_WITH_EXPIRE_TIME = "PX";
 
     /**
-     * ³¢ÊÔ»ñÈ¡·Ö²¼Ê½Ëø
-     * @param jedis Redis¿Í»§¶Ë
-     * @param lockKey Ëø
-     * @param requestId ÇëÇó±êÊ¶
-     * @param expireTime ³¬ÆÚÊ±¼ä
-     * @return ÊÇ·ñ»ñÈ¡³É¹¦
+     * å°è¯•è·å–åˆ†å¸ƒå¼é”
+     * @param jedis Rediså®¢æˆ·ç«¯
+     * @param lockKey é”
+     * @param requestId è¯·æ±‚æ ‡è¯†
+     * @param expireTime è¶…æœŸæ—¶é—´
+     * @return æ˜¯å¦è·å–æˆåŠŸ
      */
     public static boolean tryGetDistributedLock(Jedis jedis, String lockKey, String requestId, int expireTime) {
 
@@ -31,11 +31,11 @@ public class RedisTool {
     }
 
     /**
-     * ÊÍ·Å·Ö²¼Ê½Ëø
-     * @param jedis Redis¿Í»§¶Ë
-     * @param lockKey Ëø
-     * @param requestId ÇëÇó±êÊ¶
-     * @return ÊÇ·ñÊÍ·Å³É¹¦
+     * é‡Šæ”¾åˆ†å¸ƒå¼é”
+     * @param jedis Rediså®¢æˆ·ç«¯
+     * @param lockKey é”
+     * @param requestId è¯·æ±‚æ ‡è¯†
+     * @return æ˜¯å¦é‡Šæ”¾æˆåŠŸ
      */
     public static boolean releaseDistributedLock(Jedis jedis, String lockKey, String requestId) {
 
@@ -54,9 +54,9 @@ public class RedisTool {
                 Jedis jedis = new Jedis("192.168.61.134");
                 Boolean res = tryGetDistributedLock(jedis, "userLock",  "1", 10000);
                 if(res){
-                    System.out.println(Thread.currentThread().getName()+"»ñÈ¡Ëø³É¹¦£¡");
+                    System.out.println(Thread.currentThread().getName()+"è·å–é”æˆåŠŸï¼");
                     Boolean res1 = releaseDistributedLock(jedis, "userLock",  "1");
-                    System.out.println(res1?Thread.currentThread().getName()+"ÊÍ·ÅËø³É¹¦£¡":Thread.currentThread().getName()+"ÊÍ·ÅËøÊ§°Ü£¡");
+                    System.out.println(res1?Thread.currentThread().getName()+"é‡Šæ”¾é”æˆåŠŸï¼":Thread.currentThread().getName()+"é‡Šæ”¾é”å¤±è´¥ï¼");
                 }
             }, Integer.toString(i)).start();
         }
