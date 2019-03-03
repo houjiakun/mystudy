@@ -17,15 +17,15 @@ public class DemoServlet extends HttpServlet {
             throws ServletException, IOException {
 
         req.setCharacterEncoding("UTF-8");
-        resp.setCharacterEncoding("UTF-8");
+        /*resp.setCharacterEncoding("UTF-8");*/
         resp.setContentType("text/html;charset=UTF-8");
         String message = req.getParameter("message");
         resp.getWriter().println(message);
 
         resp.getWriter().println("<br />");
 
-        String contextPath = req.getServletContext().getContextPath();
-        resp.getWriter().println("Context Path : " + contextPath);
+       /* String contextPath = req.getServletContext().getContextPath();*/
+        resp.getWriter().println("Context Path : " /*+ contextPath*/);
 
     }
 
