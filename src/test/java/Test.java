@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Test {
 
@@ -18,7 +19,8 @@ public class Test {
     public  void test() {
         Map map = new HashMap(19);
         map.put("1","1");
-
+        ConcurrentHashMap map1 = new ConcurrentHashMap<>(19);
+        map1.put()
     }
 
 
