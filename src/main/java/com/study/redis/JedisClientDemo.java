@@ -26,6 +26,19 @@ public class JedisClientDemo {
 
         JedisCluster jedisCluster = new JedisCluster(hostAndPortSet);
         jedisCluster.set("", "");
+        String projectId = "123";
+        jedisCluster.set("vote:round" + projectId,"1");
+        jedisCluster.incr("vote:round:" + projectId);
 
+        String voteRound = jedisCluster.get("vote:round:"+ projectId);
+
+        String expertId= "expertId";
+
+        jedisCluster.zadd("vote:" + projectId+":" + voteRound, 1, "张三");
+        jedisCluster.zadd("vote:" + projectId+":" + voteRound, 1, "李四");
+        jedisCluster.zadd("vote:" + projectId+":" + voteRound, 1, "王五");
+        jedisCluster.zadd("vote:" + projectId+":" + voteRound, 1, "王五");
+
+        Long vote = jedisCluster.zunionstore("vote:" + projectId + ":" + voteRound, "张三");
     }
 }

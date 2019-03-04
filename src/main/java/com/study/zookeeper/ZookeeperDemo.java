@@ -60,7 +60,7 @@ public class ZookeeperDemo {
         zooKeeper.setData("/javaObj", "1".getBytes(), stat.getVersion());
         System.out.println(new String(data));
         Stat stat1 =new Stat();
-         zooKeeper.getData("/javaObj", true, stat1);
+        zooKeeper.getData("/javaObj", true, stat1);
         zooKeeper.delete("/javaObj",stat1.getVersion());
     }
 }
