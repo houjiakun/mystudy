@@ -1,5 +1,5 @@
-import java.io.IOException;
 
+import java.io.IOException;
 public class Test {
 
     public static void main(String[] args) {
@@ -19,10 +19,8 @@ public class Test {
         }
 
     }
-
     @org.junit.Test
     public  void test() {
-
 
     }
 
