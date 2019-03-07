@@ -8,13 +8,14 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 
 public class RedisTemplateTest {
+
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:mvc-dispatcher-servlet.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-redis_old.xml");
         RedisTemplate redisTemplate = (RedisTemplate) context.getBean("redisTemplate");
         ValueOperations valueOperations = redisTemplate.opsForValue();
         User user = new User();
-        user.setName("hjk");
-        user.setAge(18);
+        user.setName("zhangsan");
+        user.setAge(19);
         valueOperations.set(user , user);
         User getUser = (User)valueOperations.get(user);
         System.out.println(JSON.toJSONString(getUser));
