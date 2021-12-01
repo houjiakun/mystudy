@@ -14,7 +14,6 @@ public class ProxyHumen implements Humen {
         proxyWarmup();
         return humen.run();
     }
-
     @Override
     public String eat() {
         return null;

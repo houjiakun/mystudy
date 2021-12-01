@@ -12,4 +12,8 @@ public class TestMock implements DubboProviderService {
     public List getUsers() {
         return null;
     }
+
+    public static void main(String[] args) {
+        DubboProviderServiceImpl.runWithRefer();
+    }
 }

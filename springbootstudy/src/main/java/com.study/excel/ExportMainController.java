@@ -17,7 +17,7 @@ public class ExportMainController {
 
     @GetMapping("/export")
     public void testExport(HttpServletResponse response) throws Exception{
-        String exportFileName = "测试.xlsx";
+        String exportFileName = "test.xlsx";
         response.setContentType("application/vnd.ms-excel");
         response.setHeader("Content-Disposition", "attachment; filename=" + new String(exportFileName.getBytes(), "UTF-8"));
 
