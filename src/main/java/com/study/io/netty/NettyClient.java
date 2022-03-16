@@ -21,7 +21,8 @@ public class NettyClient implements Runnable {
             Bootstrap bootstrap = new Bootstrap();
             bootstrap.group(group);
             bootstrap.channel(NioSocketChannel.class)
-                    .option(ChannelOption.TCP_NODELAY, true)
+                    //.option(ChannelOption.TCP_NODELAY, true)
+                    .option(ChannelOption.SO_KEEPALIVE, true)
                     .handler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
@@ -33,17 +34,28 @@ public class NettyClient implements Runnable {
                         }
                     });
 
-                for (int i=0;i<10;i++){
-                    ChannelFuture f = bootstrap.connect("127.0.0.1",6666).sync();
+              /*  ChannelFuture f = bootstrap.connect("172.23.20.201",6666).sync();
+                f.channel().writeAndFlush("hello service !" + Thread.currentThread().getName()+ ":---->");
+                f.channel().closeFuture().sync();
+
+                ChannelFuture f1 = bootstrap.connect("172.23.20.201",6667).sync();
+                f1.channel().writeAndFlush("hello service !" + Thread.currentThread().getName()+ ":---->");
+                f1.channel().closeFuture().sync();*/
+            ChannelFuture f = bootstrap.connect("192.168.111.128",8080).sync();
+            f.channel().writeAndFlush("hello service !" + Thread.currentThread().getName()+ ":---->");
+            f.channel().closeFuture().sync();
+              /*  for (int i=0;i<10;i++){
+                    *//*ChannelFuture f = bootstrap.connect("127.0.0.1",6666).sync();*//*
+                    ChannelFuture f = bootstrap.connect("192.168.111.128",80).sync();
                     f.channel().writeAndFlush("hello service !" + Thread.currentThread().getName()+ ":---->"+i);
                     f.channel().closeFuture().sync();
-                }
+                }*/
 
 
         }catch (Exception e){
             e.printStackTrace();
         }finally {
-            group.shutdownGracefully();
+           // group.shutdownGracefully();
         }
 
     }

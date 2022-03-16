@@ -86,7 +86,7 @@ public class Sort {
 
     public static void main(String[] args) {
         int[] array = {2, 5, 7, 9, 4, 2, 3, 5};
-        quickSort(array, 0, array.length - 1);
+        // quickSort(array, 0, array.length - 1);
         shellSort(array);
         // heapSort(array);
         for (int i = 0; i < array.length; i++) {
@@ -109,6 +109,7 @@ public class Sort {
      * 第二步：将堆中第一个元素与最后的元素对调，那么数组中最大的元素移动到最后面
      * 第三步：递归进行选择最大的依次放入数组末尾
      * 堆排序属于选择排序，选择最大的放入最末尾
+     *
      * @param array
      */
     public static void heapSort(int[] array) {
